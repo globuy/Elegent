@@ -8,7 +8,7 @@ import com.itheima.reggie.entity.Orders;
 import org.springframework.web.bind.annotation.RequestBody;
 
 public interface OrderService extends IService<Orders> {
-    public R<String> submit(@RequestBody Orders orders);
+    public void submit(@RequestBody Orders orders);
     // 获取订单分页展示
     public Page<OrderDto> getPage(Long page, Long pageSize);
 
